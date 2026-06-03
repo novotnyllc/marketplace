@@ -1,13 +1,13 @@
-# Novotny LLC Codex Plugins
+# Claire Novotny LLC Codex Plugins
 
-Shared Codex plugin marketplace for Novotny LLC plugins.
+Shared Codex plugin marketplace for Claire Novotny LLC plugins.
 
 ## Install
 
 Add the marketplace once:
 
 ```bash
-codex plugin marketplace add novotnyllc/codex-plugins-marketplace
+codex plugin marketplace add novotnyllc/marketplace
 ```
 
 Then install the plugins you want:
