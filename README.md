@@ -17,6 +17,7 @@ codex plugin add codex-director --marketplace novotnyllc
 codex plugin add babysit-pr --marketplace novotnyllc
 codex plugin add subagent-orchestration --marketplace novotnyllc
 codex plugin add dotnet-artisan --marketplace novotnyllc
+codex plugin add browser-control --marketplace novotnyllc
 ```
 
 ## Included Plugins
@@ -25,3 +26,4 @@ codex plugin add dotnet-artisan --marketplace novotnyllc
 - `babysit-pr` from `novotnyllc/babysit-pr`
 - `subagent-orchestration` from `novotnyllc/subagent-orchestration`
 - `dotnet-artisan` from `novotnyllc/dotnet-artisan`
+- `browser-control` from `novotnyllc/browser-control`

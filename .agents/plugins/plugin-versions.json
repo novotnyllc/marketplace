@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-06-04",
+  "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
+  "plugins": [
+    {
+      "name": "codex-director",
+      "repository": "novotnyllc/codex-director",
+      "path": "plugins/codex-director",
+      "version": "0.3.0"
+    },
+    {
+      "name": "babysit-pr",
+      "repository": "novotnyllc/babysit-pr",
+      "path": "plugins/babysit-pr",
+      "version": "1.0.1"
+    },
+    {
+      "name": "subagent-orchestration",
+      "repository": "novotnyllc/subagent-orchestration",
+      "path": "plugins/subagent-orchestration",
+      "version": "0.1.5"
+    },
+    {
+      "name": "dotnet-artisan",
+      "repository": "novotnyllc/dotnet-artisan",
+      "path": "plugins/dotnet-artisan",
+      "version": "1.4.1"
+    },
+    {
+      "name": "browser-control",
+      "repository": "novotnyllc/browser-control",
+      "path": "plugins/browser-control",
+      "version": "0.1.2"
+    }
+  ]
+}
