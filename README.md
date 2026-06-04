@@ -22,7 +22,7 @@ codex plugin add browser-control --marketplace novotnyllc
 
 ## Included Plugins
 
-- `codex-director` from `novotnyllc/codex-director`
+- `codex-director` from `novotnyllc/codex-director` - project Director workflow with quiet, signal-first worker monitoring
 - `babysit-pr` from `novotnyllc/babysit-pr`
 - `subagent-orchestration` from `novotnyllc/subagent-orchestration`
 - `dotnet-artisan` from `novotnyllc/dotnet-artisan`
