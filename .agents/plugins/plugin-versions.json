@@ -6,7 +6,7 @@
       "name": "codex-director",
       "repository": "novotnyllc/codex-director",
       "path": "plugins/codex-director",
-      "version": "0.6.0"
+      "version": "0.6.1"
     },
     {
       "name": "babysit-pr",
