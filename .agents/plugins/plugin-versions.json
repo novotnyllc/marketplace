@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-04",
+  "generatedAt": "2026-06-06",
   "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
   "plugins": [
     {
       "name": "codex-director",
       "repository": "novotnyllc/codex-director",
       "path": "plugins/codex-director",
-      "version": "0.7.0"
+      "version": "0.7.1"
     },
     {
       "name": "babysit-pr",
