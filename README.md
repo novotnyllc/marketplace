@@ -18,6 +18,7 @@ codex plugin add babysit-pr --marketplace novotnyllc
 codex plugin add subagent-orchestration --marketplace novotnyllc
 codex plugin add dotnet-artisan --marketplace novotnyllc
 codex plugin add browser-control --marketplace novotnyllc
+codex plugin add agent-utilities --marketplace novotnyllc
 ```
 
 ## Included Plugins
@@ -27,3 +28,4 @@ codex plugin add browser-control --marketplace novotnyllc
 - `subagent-orchestration` from `novotnyllc/subagent-orchestration`
 - `dotnet-artisan` from `novotnyllc/dotnet-artisan`
 - `browser-control` from `novotnyllc/browser-control`
+- `agent-utilities` from `novotnyllc/agent-utilities` - agent utility skills for browser control, remote Macs, 1Password, Oracle, native profiling, and CLI design

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06",
+  "generatedAt": "2026-06-19",
   "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
   "plugins": [
     {
@@ -31,6 +31,12 @@
       "repository": "novotnyllc/browser-control",
       "path": "plugins/browser-control",
       "version": "0.1.2"
+    },
+    {
+      "name": "agent-utilities",
+      "repository": "novotnyllc/agent-utilities",
+      "path": "plugins/agent-utilities",
+      "version": "0.1.0"
     }
   ]
 }

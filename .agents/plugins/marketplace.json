@@ -68,6 +68,19 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "agent-utilities",
+      "source": {
+        "source": "git-subdir",
+        "url": "novotnyllc/agent-utilities",
+        "path": "plugins/agent-utilities"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }
