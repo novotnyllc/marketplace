@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19",
+  "generatedAt": "2026-06-22",
   "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
   "plugins": [
     {
@@ -7,12 +7,6 @@
       "repository": "novotnyllc/codex-director",
       "path": "plugins/codex-director",
       "version": "0.8.18"
-    },
-    {
-      "name": "babysit-pr",
-      "repository": "novotnyllc/babysit-pr",
-      "path": "plugins/babysit-pr",
-      "version": "1.0.1"
     },
     {
       "name": "subagent-orchestration",
