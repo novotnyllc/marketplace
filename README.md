@@ -33,7 +33,6 @@ Then install the plugins you want:
 
 ```bash
 claude plugin install dotnet-artisan@novotnyllc
-claude plugin install browser-control@novotnyllc
 claude plugin install agent-utilities@novotnyllc
 ```
 
