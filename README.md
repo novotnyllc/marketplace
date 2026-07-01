@@ -1,8 +1,9 @@
-# Claire Novotny LLC Codex Plugins
+# Claire Novotny LLC Plugins
 
-Shared Codex plugin marketplace for Claire Novotny LLC plugins.
+Shared plugin marketplace for Claire Novotny LLC plugins, published for both
+Codex and Claude Code.
 
-## Install
+## Install (Codex)
 
 Add the marketplace once:
 
@@ -20,6 +21,26 @@ codex plugin add browser-control --marketplace novotnyllc
 codex plugin add agent-utilities --marketplace novotnyllc
 ```
 
+## Install (Claude Code)
+
+Add the marketplace once:
+
+```bash
+claude plugin marketplace add novotnyllc/marketplace
+```
+
+Then install the plugins you want:
+
+```bash
+claude plugin install dotnet-artisan@novotnyllc
+claude plugin install browser-control@novotnyllc
+claude plugin install agent-utilities@novotnyllc
+```
+
+The `codex-director` and `subagent-orchestration` plugins are Codex-only; they
+orchestrate Codex threads and `multi_agent_v2` subagents, which have no Claude
+Code equivalent, so they are not published to the Claude marketplace.
+
 ## Included Plugins
 
 - `codex-director` from `novotnyllc/codex-director` - project Director workflow with quiet, signal-first worker monitoring
@@ -27,3 +48,11 @@ codex plugin add agent-utilities --marketplace novotnyllc
 - `dotnet-artisan` from `novotnyllc/dotnet-artisan`
 - `browser-control` from `novotnyllc/browser-control`
 - `agent-utilities` from `novotnyllc/agent-utilities` - agent utility skills for browser control, remote Macs, 1Password, Oracle, native profiling, and CLI design
+
+## Marketplace Manifests
+
+- Codex: `.agents/plugins/marketplace.json`
+- Claude Code: `.claude-plugin/marketplace.json`
+
+Both manifests reference the same plugin repositories and subdirectory paths, so
+a plugin resolves identically from either agent.
