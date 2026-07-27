@@ -31,8 +31,8 @@
         "url": "novotnyllc/agent-utilities",
         "path": "plugins/agent-utilities"
       },
-      "description": "Agent utility skills for browser control, PR babysitting, remote Macs, 1Password, Oracle, native profiling, and CLI design.",
-      "version": "0.3.5",
+      "description": "Agent utility skills for delivery orchestration, browser control, remote Macs, 1Password, Oracle, native profiling, and CLI design.",
+      "version": "0.3.7",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
