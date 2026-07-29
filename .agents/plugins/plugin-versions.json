@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27",
+  "generatedAt": "2026-07-29",
   "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
   "plugins": [
     {
@@ -31,6 +31,12 @@
       "repository": "novotnyllc/agent-utilities",
       "path": "plugins/agent-utilities",
       "version": "0.3.7"
+    },
+    {
+      "name": "tart-xcode-runner",
+      "repository": "novotnyllc/tart-xcode-runner",
+      "path": ".",
+      "version": "0.1.1"
     }
   ]
 }
