@@ -36,7 +36,7 @@
       "name": "tart-xcode-runner",
       "repository": "novotnyllc/tart-xcode-runner",
       "path": ".",
-      "version": "0.4.0"
+      "version": "0.4.1"
     }
   ]
 }
