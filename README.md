@@ -35,10 +35,11 @@ Then install the plugins you want:
 ```bash
 claude plugin install dotnet-artisan@novotnyllc
 claude plugin install agent-utilities@novotnyllc
+claude plugin install tart-xcode-runner@novotnyllc
 ```
 
-The `codex-director`, `subagent-orchestration`, and `tart-xcode-runner`
-plugins are Codex-only. They are not published to the Claude marketplace.
+The `codex-director` and `subagent-orchestration` plugins are Codex-only.
+They are not published to the Claude marketplace.
 
 ## Included Plugins
 

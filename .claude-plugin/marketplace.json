@@ -40,6 +40,22 @@
       "license": "MIT",
       "category": "productivity",
       "homepage": "https://github.com/novotnyllc/agent-utilities"
+    },
+    {
+      "name": "tart-xcode-runner",
+      "source": {
+        "source": "github",
+        "repo": "novotnyllc/tart-xcode-runner"
+      },
+      "description": "Run isolated Xcode builds and XCUITests in reusable, resettable Tart macOS VMs.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Claire Novotny LLC",
+        "url": "https://github.com/novotnyllc"
+      },
+      "license": "MIT",
+      "category": "development",
+      "homepage": "https://github.com/novotnyllc/tart-xcode-runner"
     }
   ]
 }
