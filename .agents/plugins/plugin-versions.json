@@ -30,13 +30,19 @@
       "name": "agent-utilities",
       "repository": "novotnyllc/agent-utilities",
       "path": "plugins/agent-utilities",
-      "version": "0.3.9"
+      "version": "0.4.0"
     },
     {
       "name": "tart-xcode-runner",
       "repository": "novotnyllc/tart-xcode-runner",
       "path": ".",
       "version": "0.4.7"
+    },
+    {
+      "name": "machine-utilities",
+      "repository": "novotnyllc/machine-utilities",
+      "path": "plugins/machine-utilities",
+      "version": "0.1.0"
     }
   ]
 }
