@@ -5,32 +5,6 @@
   },
   "plugins": [
     {
-      "name": "codex-director",
-      "source": {
-        "source": "git-subdir",
-        "url": "novotnyllc/codex-director",
-        "path": "plugins/codex-director"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
-    },
-    {
-      "name": "subagent-orchestration",
-      "source": {
-        "source": "git-subdir",
-        "url": "novotnyllc/subagent-orchestration",
-        "path": "plugins/subagent-orchestration"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Coding"
-    },
-    {
       "name": "dotnet-artisan",
       "source": {
         "source": "git-subdir",
@@ -42,19 +16,6 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Development"
-    },
-    {
-      "name": "browser-control",
-      "source": {
-        "source": "git-subdir",
-        "url": "novotnyllc/browser-control",
-        "path": "plugins/browser-control"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
     },
     {
       "name": "agent-utilities",
@@ -81,6 +42,19 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Development"
+    },
+    {
+      "name": "machine-utilities",
+      "source": {
+        "source": "git-subdir",
+        "url": "novotnyllc/machine-utilities",
+        "path": "plugins/machine-utilities"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }
