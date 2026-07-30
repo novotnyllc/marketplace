@@ -31,8 +31,8 @@
         "url": "novotnyllc/agent-utilities",
         "path": "plugins/agent-utilities"
       },
-      "description": "Agent utility skills for delivery orchestration, browser control, remote Macs, 1Password, Oracle, native profiling, and CLI design.",
-      "version": "0.3.9",
+      "description": "Agent utility skills for delivery orchestration, browser control, 1Password, Oracle, native profiling, and CLI design.",
+      "version": "0.4.0",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
@@ -56,6 +56,24 @@
       "license": "MIT",
       "category": "development",
       "homepage": "https://github.com/novotnyllc/tart-xcode-runner"
+    },
+    {
+      "name": "machine-utilities",
+      "source": {
+        "source": "git-subdir",
+        "url": "novotnyllc/machine-utilities",
+        "path": "plugins/machine-utilities",
+        "sha": "2eb24ec6335ec114a2023091b2bf5598aa0e5197"
+      },
+      "description": "Inventory and reconcile packages, agent tooling, projects, dotfiles, remote Macs, SSH, startup tasks, and portable authentication across mixed-machine fleets.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Claire Novotny LLC",
+        "url": "https://github.com/novotnyllc"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "homepage": "https://github.com/novotnyllc/machine-utilities"
     }
   ]
 }
