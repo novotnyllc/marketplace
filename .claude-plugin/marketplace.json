@@ -32,7 +32,7 @@
         "path": "plugins/agent-utilities"
       },
       "description": "Agent utility skills for delivery orchestration, browser control, remote Macs, 1Password, Oracle, native profiling, and CLI design.",
-      "version": "0.3.8",
+      "version": "0.3.9",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
