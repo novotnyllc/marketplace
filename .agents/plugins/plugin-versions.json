@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29",
+  "generatedAt": "2026-07-30",
   "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
   "plugins": [
     {
@@ -42,7 +42,7 @@
       "name": "machine-utilities",
       "repository": "novotnyllc/machine-utilities",
       "path": "plugins/machine-utilities",
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ]
 }
