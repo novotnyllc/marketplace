@@ -49,7 +49,7 @@
         "source": "git-subdir",
         "url": "novotnyllc/machine-utilities",
         "path": "plugins/machine-utilities",
-        "sha": "1c70c6210d60e4ac44497e39912afff63f196a54"
+        "sha": "cbe76884fe70f195fd32f30e67ada84340af71c9"
       },
       "policy": {
         "installation": "AVAILABLE",
