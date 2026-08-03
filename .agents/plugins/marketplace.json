@@ -22,7 +22,8 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/agent-utilities.git",
-        "path": "plugins/agent-utilities"
+        "path": "plugins/agent-utilities",
+        "sha": "1369be176369541c4938e5aaf45a8565c794a020"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -49,7 +50,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/machine-utilities.git",
         "path": "plugins/machine-utilities",
-        "sha": "4613ab371fe57f00c19e19e55d47c283b8f84726"
+        "sha": "12ca4938feae84e84cf1c62d6eecc1667e1e9be7"
       },
       "policy": {
         "installation": "AVAILABLE",
