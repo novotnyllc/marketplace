@@ -8,7 +8,7 @@
       "name": "dotnet-artisan",
       "source": {
         "source": "git-subdir",
-        "url": "novotnyllc/dotnet-artisan",
+        "url": "https://github.com/novotnyllc/dotnet-artisan.git",
         "path": "plugins/dotnet-artisan"
       },
       "policy": {
@@ -21,7 +21,7 @@
       "name": "agent-utilities",
       "source": {
         "source": "git-subdir",
-        "url": "novotnyllc/agent-utilities",
+        "url": "https://github.com/novotnyllc/agent-utilities.git",
         "path": "plugins/agent-utilities"
       },
       "policy": {
@@ -47,7 +47,7 @@
       "name": "machine-utilities",
       "source": {
         "source": "git-subdir",
-        "url": "novotnyllc/machine-utilities",
+        "url": "https://github.com/novotnyllc/machine-utilities.git",
         "path": "plugins/machine-utilities",
         "sha": "e7d27cafce65c74d08ed1edca020f4f2425595cb"
       },

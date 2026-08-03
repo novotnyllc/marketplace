@@ -11,7 +11,7 @@
       "name": "dotnet-artisan",
       "source": {
         "source": "git-subdir",
-        "url": "novotnyllc/dotnet-artisan",
+        "url": "https://github.com/novotnyllc/dotnet-artisan.git",
         "path": "plugins/dotnet-artisan"
       },
       "description": "Comprehensive .NET development skills for modern C#, ASP.NET, MAUI, Blazor, and cloud-native applications.",
@@ -28,7 +28,7 @@
       "name": "agent-utilities",
       "source": {
         "source": "git-subdir",
-        "url": "novotnyllc/agent-utilities",
+        "url": "https://github.com/novotnyllc/agent-utilities.git",
         "path": "plugins/agent-utilities"
       },
       "description": "Agent utility skills for delivery orchestration, browser control, 1Password, Oracle, native profiling, and CLI design.",
@@ -61,7 +61,7 @@
       "name": "machine-utilities",
       "source": {
         "source": "git-subdir",
-        "url": "novotnyllc/machine-utilities",
+        "url": "https://github.com/novotnyllc/machine-utilities.git",
         "path": "plugins/machine-utilities",
         "sha": "e7d27cafce65c74d08ed1edca020f4f2425595cb"
       },
