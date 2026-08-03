@@ -42,7 +42,7 @@
       "name": "machine-utilities",
       "repository": "novotnyllc/machine-utilities",
       "path": "plugins/machine-utilities",
-      "version": "0.2.6"
+      "version": "0.2.7"
     }
   ]
 }
