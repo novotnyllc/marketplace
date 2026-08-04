@@ -50,7 +50,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/machine-utilities.git",
         "path": "plugins/machine-utilities",
-        "sha": "2177fa89cd699132b33578506c2808619a18e7f0"
+        "sha": "7bc7cd979e95a589f66929fa44319ffc4e29526b"
       },
       "policy": {
         "installation": "AVAILABLE",
