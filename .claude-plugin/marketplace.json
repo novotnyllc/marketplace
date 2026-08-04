@@ -64,10 +64,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/machine-utilities.git",
         "path": "plugins/machine-utilities",
-        "sha": "75990ebf0505f0fbec7d8b4b968f8f1b7be61154"
+        "sha": "bd81148ee52a53b435432e7612765681dfedf2f1"
       },
       "description": "Inventory and reconcile packages, agent tooling, projects, dotfiles, remote Macs, SSH, startup tasks, and portable authentication across mixed-machine fleets.",
-      "version": "0.2.14",
+      "version": "0.2.15",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
