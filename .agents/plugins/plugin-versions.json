@@ -18,7 +18,7 @@
       "name": "dotnet-artisan",
       "repository": "novotnyllc/dotnet-artisan",
       "path": "plugins/dotnet-artisan",
-      "version": "1.4.1"
+      "version": "1.4.2"
     },
     {
       "name": "browser-control",
@@ -42,7 +42,7 @@
       "name": "machine-utilities",
       "repository": "novotnyllc/machine-utilities",
       "path": "plugins/machine-utilities",
-      "version": "0.2.16"
+      "version": "0.2.17"
     }
   ]
 }
