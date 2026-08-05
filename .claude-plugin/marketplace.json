@@ -64,7 +64,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/yardmaster.git",
         "path": "plugins/yardmaster",
-        "sha": "ccbe86c3c4509b94bf51135b35de9912b09491f2"
+        "sha": "14fb87f1d270d1bb6e9e286c0f95c5ea19210e4b"
       },
       "description": "The delivery system for agent work: model routing, goal-driven delivery, task orchestration, cross-machine placement, review gates, and Oracle.",
       "version": "0.1.0",
