@@ -30,10 +30,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/agent-utilities.git",
         "path": "plugins/agent-utilities",
-        "sha": "fbee3036fa98515b864ecf9293df175e878eff48"
+        "sha": "9de7c26a3e13c17dcc3334cd73490fe80c5f2964"
       },
       "description": "Agent utility skills for delivery orchestration, browser control, 1Password, Oracle, native profiling, and CLI design.",
-      "version": "0.5.15",
+      "version": "0.5.16",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
