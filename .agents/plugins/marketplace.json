@@ -50,7 +50,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/yardmaster.git",
         "path": "plugins/yardmaster",
-        "sha": "7d475e67d81dd4c98a961a843bcaae105bd72323"
+        "sha": "cac836ff0d20e74cd1c693f6c6fe006f7b0315e0"
       },
       "policy": {
         "installation": "AVAILABLE",

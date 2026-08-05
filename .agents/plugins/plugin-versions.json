@@ -24,7 +24,7 @@
       "name": "yardmaster",
       "repository": "novotnyllc/yardmaster",
       "path": "plugins/yardmaster",
-      "version": "0.2.2"
+      "version": "0.3.0"
     },
     {
       "name": "roundhouse",
