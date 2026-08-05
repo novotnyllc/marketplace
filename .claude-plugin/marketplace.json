@@ -64,10 +64,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/yardmaster.git",
         "path": "plugins/yardmaster",
-        "sha": "827230ffad31cf62a977db4ed9038a2df03900af"
+        "sha": "f07a2c910497ac47fe5fca1b592067ee97c9a3ce"
       },
       "description": "The delivery system for agent work: model routing, goal-driven delivery, task orchestration, cross-machine placement, review gates, and Oracle.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
@@ -82,10 +82,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/roundhouse.git",
         "path": "plugins/roundhouse",
-        "sha": "0a5714f5635d16cf32b7bfa313c1a670da545469"
+        "sha": "eefe0aaef0463a39a7ceeb3dcc3ec0d861273dd1"
       },
       "description": "Machine and infrastructure administration for agent fleets: readiness, inventory, parity, packages, dotfiles, auth, SSH transport, privileged installs, and UniFi.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
