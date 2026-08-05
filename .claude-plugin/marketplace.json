@@ -64,10 +64,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/yardmaster.git",
         "path": "plugins/yardmaster",
-        "sha": "f07a2c910497ac47fe5fca1b592067ee97c9a3ce"
+        "sha": "7d475e67d81dd4c98a961a843bcaae105bd72323"
       },
       "description": "The delivery system for agent work: model routing, goal-driven delivery, task orchestration, cross-machine placement, review gates, and Oracle.",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
