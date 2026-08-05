@@ -3,52 +3,34 @@
   "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
   "plugins": [
     {
-      "name": "codex-director",
-      "repository": "novotnyllc/codex-director",
-      "path": "plugins/codex-director",
-      "version": "0.8.18"
-    },
-    {
-      "name": "subagent-orchestration",
-      "repository": "novotnyllc/subagent-orchestration",
-      "path": "plugins/subagent-orchestration",
-      "version": "0.1.5"
-    },
-    {
       "name": "dotnet-artisan",
       "repository": "novotnyllc/dotnet-artisan",
       "path": "plugins/dotnet-artisan",
       "version": "1.4.2"
     },
     {
-      "name": "browser-control",
-      "repository": "novotnyllc/browser-control",
-      "path": "plugins/browser-control",
-      "version": "0.1.2"
-    },
-    {
       "name": "agent-utilities",
       "repository": "novotnyllc/agent-utilities",
       "path": "plugins/agent-utilities",
-      "version": "0.6.0"
+      "version": "0.6.1"
     },
     {
       "name": "tart-xcode-runner",
       "repository": "novotnyllc/tart-xcode-runner",
       "path": ".",
-      "version": "0.4.7"
+      "version": "0.4.8"
     },
     {
       "name": "yardmaster",
       "repository": "novotnyllc/yardmaster",
       "path": "plugins/yardmaster",
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "name": "roundhouse",
       "repository": "novotnyllc/roundhouse",
       "path": "plugins/roundhouse",
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ]
 }
