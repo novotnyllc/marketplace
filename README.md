@@ -17,7 +17,8 @@ Then install the plugins you want:
 codex plugin add dotnet-artisan --marketplace novotnyllc
 codex plugin add agent-utilities --marketplace novotnyllc
 codex plugin add tart-xcode-runner --marketplace novotnyllc
-codex plugin add machine-utilities --marketplace novotnyllc
+codex plugin add yardmaster --marketplace novotnyllc
+codex plugin add roundhouse --marketplace novotnyllc
 ```
 
 ## Install (Claude Code)
@@ -34,15 +35,17 @@ Then install the plugins you want:
 claude plugin install dotnet-artisan@novotnyllc
 claude plugin install agent-utilities@novotnyllc
 claude plugin install tart-xcode-runner@novotnyllc
-claude plugin install machine-utilities@novotnyllc
+claude plugin install yardmaster@novotnyllc
+claude plugin install roundhouse@novotnyllc
 ```
 
 ## Included Plugins
 
 - `dotnet-artisan` from `novotnyllc/dotnet-artisan`
-- `agent-utilities` from `novotnyllc/agent-utilities` - agent utility skills for browser control, 1Password, Oracle, native profiling, and CLI design
+- `agent-utilities` from `novotnyllc/agent-utilities` - the craft-skill toolbox: browser automation, CLI design, frontend design, profiling, 1Password, and skill auditing
 - `tart-xcode-runner` from `novotnyllc/tart-xcode-runner` - isolated Xcode builds and XCUITests in reusable Tart macOS VMs
-- `machine-utilities` from `novotnyllc/machine-utilities` - fleet inventory and reconciliation for packages, agent tooling, projects, dotfiles, remote Macs, SSH, startup tasks, and portable authentication
+- `yardmaster` from `novotnyllc/yardmaster` - the delivery system for agent work: model routing, goal-driven delivery, task orchestration, cross-machine placement, and review gates
+- `roundhouse` from `novotnyllc/roundhouse` - machine and infrastructure administration: fleet readiness, inventory, parity, packages, dotfiles, auth, SSH transport, privileged installs, and UniFi
 
 ## Marketplace Manifests
 

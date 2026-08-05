@@ -23,7 +23,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/agent-utilities.git",
         "path": "plugins/agent-utilities",
-        "sha": "006d258bf296b0bbd1f5d9db3a0ee2c25b28eff2"
+        "sha": "4bbfe4204e966b1e4b72ae07738b430ce311cc4d"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -45,12 +45,26 @@
       "category": "Development"
     },
     {
-      "name": "machine-utilities",
+      "name": "yardmaster",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/novotnyllc/machine-utilities.git",
-        "path": "plugins/machine-utilities",
-        "sha": "13ccf2d8f600c6eca3925594f10cedff7f468960"
+        "url": "https://github.com/novotnyllc/yardmaster.git",
+        "path": "plugins/yardmaster",
+        "sha": "ccbe86c3c4509b94bf51135b35de9912b09491f2"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "roundhouse",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/novotnyllc/roundhouse.git",
+        "path": "plugins/roundhouse",
+        "sha": "989486ff829dd4ec4ffa4f6f504323688ddbd0e8"
       },
       "policy": {
         "installation": "AVAILABLE",
