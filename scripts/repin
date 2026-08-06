@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+"""Repin a plugin in BOTH marketplace manifests atomically.
+
+The repo carries two manifests — .claude-plugin/marketplace.json (Claude
+Code schema, has version fields) and .agents/plugins/marketplace.json
+(Codex schema, sha only). Updating one and not the other ships stale
+plugins to one harness fleet-wide; this script makes that impossible.
+
+Usage:
+  scripts/repin NAME SHA [VERSION]   update NAME's sha (and version) in both
+  scripts/repin check                verify both manifests agree on shas
+"""
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+MANIFESTS = [
+    (ROOT / ".claude-plugin/marketplace.json", True),   # (path, has version field)
+    (ROOT / ".agents/plugins/marketplace.json", False),
+]
+
+
+def load(path):
+    return json.loads(path.read_text())
+
+
+def save(path, data):
+    path.write_text(json.dumps(data, indent=2) + "\n")
+
+
+def shas(path):
+    return {p["name"]: p["source"].get("sha") for p in load(path)["plugins"]}
+
+
+def check():
+    a, b = (shas(p) for p, _ in MANIFESTS)
+    drift = [n for n in a.keys() & b.keys() if a[n] != b[n]]
+    for n in sorted(drift):
+        print(f"DRIFT {n}: claude={a[n]} codex={b[n]}")
+    if drift:
+        sys.exit(1)
+    print(f"ok: {len(a.keys() & b.keys())} shared plugins agree")
+
+
+def repin(name, sha, version):
+    if len(sha) != 40:
+        sys.exit(f"error: expected a full 40-char sha, got {sha!r}")
+    for path, has_version in MANIFESTS:
+        data = load(path)
+        entry = next((p for p in data["plugins"] if p["name"] == name), None)
+        if entry is None:
+            sys.exit(f"error: {name} not in {path.relative_to(ROOT)}")
+        if "sha" not in entry["source"]:
+            sys.exit(f"error: {name} in {path.relative_to(ROOT)} is not sha-pinned")
+        entry["source"]["sha"] = sha
+        if has_version and version:
+            entry["version"] = version
+        save(path, data)
+        print(f"{path.relative_to(ROOT)}: {name} -> {sha}" + (f" ({version})" if has_version and version else ""))
+    check()
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    if args == ["check"]:
+        check()
+    elif len(args) in (2, 3):
+        repin(args[0], args[1], args[2] if len(args) == 3 else None)
+    else:
+        sys.exit(__doc__)
