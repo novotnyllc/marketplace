@@ -30,10 +30,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/agent-utilities.git",
         "path": "plugins/agent-utilities",
-        "sha": "4f267f37a5edf84516358189e877e978fffe9803"
+        "sha": "a33cbc10b1bee6cbfe9e79e613b7fbefcecec37a"
       },
       "description": "The toolbox: self-contained craft skills \u2014 browser automation, CLI design, frontend design, native profiling and performance, 1Password, and skill auditing.",
-      "version": "0.6.1",
+      "version": "0.6.2",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
@@ -49,7 +49,7 @@
         "repo": "novotnyllc/tart-xcode-runner"
       },
       "description": "Run isolated Xcode builds and XCUITests in reusable, resettable Tart macOS VMs.",
-      "version": "0.4.8",
+      "version": "0.4.9",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
@@ -59,22 +59,22 @@
       "homepage": "https://github.com/novotnyllc/tart-xcode-runner"
     },
     {
-      "name": "yardmaster",
+      "name": "railyard",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/novotnyllc/yardmaster.git",
-        "path": "plugins/yardmaster",
-        "sha": "98b8de49e2aed1aaece57c03a96d03de31de8242"
+        "url": "https://github.com/novotnyllc/railyard.git",
+        "path": "plugins/railyard",
+        "sha": "de089deec2524ceca03a2d7dfbdd62774d1dc230"
       },
       "description": "The delivery system for agent work: model routing, goal-driven delivery, task orchestration, cross-machine placement, review gates, and Oracle.",
-      "version": "0.3.2",
+      "version": "0.4.0",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
       },
       "license": "MIT",
       "category": "productivity",
-      "homepage": "https://github.com/novotnyllc/yardmaster"
+      "homepage": "https://github.com/novotnyllc/railyard"
     },
     {
       "name": "roundhouse",
@@ -82,10 +82,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/roundhouse.git",
         "path": "plugins/roundhouse",
-        "sha": "eefe0aaef0463a39a7ceeb3dcc3ec0d861273dd1"
+        "sha": "5454a35e23be1a79354f1fb1f70d92060e30f1f6"
       },
       "description": "Machine and infrastructure administration for agent fleets: readiness, inventory, parity, packages, dotfiles, auth, SSH transport, privileged installs, and UniFi.",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"

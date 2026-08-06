@@ -12,25 +12,25 @@
       "name": "agent-utilities",
       "repository": "novotnyllc/agent-utilities",
       "path": "plugins/agent-utilities",
-      "version": "0.6.1"
+      "version": "0.6.2"
     },
     {
       "name": "tart-xcode-runner",
       "repository": "novotnyllc/tart-xcode-runner",
       "path": ".",
-      "version": "0.4.8"
+      "version": "0.4.9"
     },
     {
-      "name": "yardmaster",
-      "repository": "novotnyllc/yardmaster",
-      "path": "plugins/yardmaster",
-      "version": "0.3.2"
+      "name": "railyard",
+      "repository": "novotnyllc/railyard",
+      "path": "plugins/railyard",
+      "version": "0.4.0"
     },
     {
       "name": "roundhouse",
       "repository": "novotnyllc/roundhouse",
       "path": "plugins/roundhouse",
-      "version": "0.3.0"
+      "version": "0.3.1"
     }
   ]
 }
