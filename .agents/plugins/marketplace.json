@@ -50,7 +50,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/railyard.git",
         "path": "plugins/railyard",
-        "sha": "de089deec2524ceca03a2d7dfbdd62774d1dc230"
+        "sha": "758d1bdee0557c25adf938ac82aa1df4f7ffbc4b"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -64,7 +64,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/roundhouse.git",
         "path": "plugins/roundhouse",
-        "sha": "5454a35e23be1a79354f1fb1f70d92060e30f1f6"
+        "sha": "c010d0794a556e92c688f120caf68f194f5eddbe"
       },
       "policy": {
         "installation": "AVAILABLE",
