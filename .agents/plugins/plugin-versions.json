@@ -24,13 +24,13 @@
       "name": "railyard",
       "repository": "novotnyllc/railyard",
       "path": "plugins/railyard",
-      "version": "0.5.0"
+      "version": "0.5.1"
     },
     {
       "name": "roundhouse",
       "repository": "novotnyllc/roundhouse",
       "path": "plugins/roundhouse",
-      "version": "0.5.0"
+      "version": "0.5.1"
     }
   ]
 }

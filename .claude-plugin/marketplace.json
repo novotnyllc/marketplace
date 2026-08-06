@@ -64,10 +64,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/railyard.git",
         "path": "plugins/railyard",
-        "sha": "48211dade3b4464837c0f230607abedec7bd7908"
+        "sha": "a670e34d5d8d208d7d7a7d40853d800927be5163"
       },
       "description": "The delivery system for agent work: model routing, goal-driven delivery, task orchestration, cross-machine placement, review gates, and Oracle.",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
@@ -82,10 +82,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/roundhouse.git",
         "path": "plugins/roundhouse",
-        "sha": "c6bae4a5960aff303e8e83621f78dbb105bbdbea"
+        "sha": "93436623e4558abc50879380e802c5c84d6cedad"
       },
       "description": "Machine and infrastructure administration for agent fleets: readiness, inventory, parity, packages, dotfiles, auth, SSH transport, privileged installs, and UniFi.",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
