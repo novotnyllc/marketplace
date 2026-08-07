@@ -54,3 +54,9 @@ claude plugin install roundhouse@novotnyllc
 
 Plugins published to both manifests use the same repository and subdirectory
 path.
+
+## License
+
+MIT — see [LICENSE](LICENSE). This repository holds only catalog manifests
+and the repin script; each listed plugin carries its own license, and any
+third-party notices live in that plugin's own repository.
