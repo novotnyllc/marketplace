@@ -36,5 +36,11 @@ version disagreement between `.claude-plugin/marketplace.json` and
 `plugin-versions.json`, and any catalog entry missing from
 `plugin-versions.json`. `repin` runs it automatically after every write.
 
+A repin is all-or-nothing: every file is staged and validated in memory before
+any is written, so a name missing from — or unpinned in — one of the three files
+aborts with nothing touched, never a half-updated catalog. `scripts/repin
+selftest` proves it (a refused partial catalog leaves no partial write, and a
+consistent one writes all three), on a throwaway temp catalog, never the pins.
+
 `scripts/repin` is python3 stdlib only — no dependencies, no install step.
-This repo has no CI; `repin check` is the gate.
+This repo has no CI; `repin check` and `repin selftest` are the gate.

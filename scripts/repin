@@ -11,6 +11,7 @@ script makes that impossible.
 Usage:
   scripts/repin NAME SHA [VERSION]   update NAME's sha (and version) in all
   scripts/repin check                verify all three files agree
+  scripts/repin selftest             prove a repin is all-or-nothing
 """
 import datetime
 import json
@@ -63,6 +64,14 @@ def check():
 def repin(name, sha, version):
     if len(sha) != 40:
         sys.exit(f"error: expected a full 40-char sha, got {sha!r}")
+
+    # Stage every file in memory and validate ALL of them before writing ANY.
+    # A missing entry or an unpinned source in a later file must abort before
+    # the first save() — otherwise one manifest lands updated while another is
+    # left behind, the exact "stale plugin to one harness fleet-wide" split the
+    # docstring promises is impossible. Nothing touches disk until the whole
+    # catalog is proven repinnable.
+    staged = []  # list of (path, data, message), written only if all validate
     for path, has_version in MANIFESTS:
         data = load(path)
         entry = next((p for p in data["plugins"] if p["name"] == name), None)
@@ -71,10 +80,11 @@ def repin(name, sha, version):
         if "sha" not in entry["source"]:
             sys.exit(f"error: {name} in {path.relative_to(ROOT)} is not sha-pinned")
         entry["source"]["sha"] = sha
+        message = f"{path.relative_to(ROOT)}: {name} -> {sha}"
         if has_version and version:
             entry["version"] = version
-        save(path, data)
-        print(f"{path.relative_to(ROOT)}: {name} -> {sha}" + (f" ({version})" if has_version and version else ""))
+            message += f" ({version})"
+        staged.append((path, data, message))
     if version:
         data = load(VERSIONS)
         entry = next((p for p in data["plugins"] if p["name"] == name), None)
@@ -82,15 +92,65 @@ def repin(name, sha, version):
             sys.exit(f"error: {name} not in {VERSIONS.relative_to(ROOT)}")
         entry["version"] = version
         data["generatedAt"] = datetime.date.today().isoformat()
-        save(VERSIONS, data)
-        print(f"{VERSIONS.relative_to(ROOT)}: {name} -> {version}")
+        staged.append((VERSIONS, data, f"{VERSIONS.relative_to(ROOT)}: {name} -> {version}"))
+
+    for path, data, message in staged:
+        save(path, data)
+        print(message)
     check()
+
+
+def selftest():
+    """Prove repin refuses a partial catalog without leaving a partial write."""
+    import shutil
+    import tempfile
+
+    global MANIFESTS, VERSIONS, ROOT
+    saved = (MANIFESTS, VERSIONS, ROOT)
+    tmp = Path(tempfile.mkdtemp())
+    old, new = "0" * 40, "1" * 40
+    try:
+        claude = tmp / ".claude-plugin/marketplace.json"
+        codex = tmp / ".agents/plugins/marketplace.json"
+        vers = tmp / ".agents/plugins/plugin-versions.json"
+        for p in (claude, codex, vers):
+            p.parent.mkdir(parents=True, exist_ok=True)
+        claude.write_text(json.dumps({"plugins": [{"name": "alpha", "source": {"sha": old}, "version": "1.0.0"}]}) + "\n")
+        codex.write_text(json.dumps({"plugins": []}) + "\n")  # alpha MISSING -> second manifest fails
+        vers.write_text(json.dumps({"plugins": [{"name": "alpha", "version": "1.0.0"}]}) + "\n")
+
+        ROOT, MANIFESTS, VERSIONS = tmp, [(claude, True), (codex, False)], vers
+        before = {p: p.read_text() for p in (claude, codex, vers)}
+        try:
+            repin("alpha", new, "2.0.0")
+        except SystemExit:
+            pass
+        else:
+            sys.exit("selftest FAILED: repin accepted a catalog missing an entry")
+        after = {p: p.read_text() for p in (claude, codex, vers)}
+        if after != before:
+            sys.exit("selftest FAILED: repin left a partial write after refusing")
+
+        # Happy path: a consistent catalog writes all three.
+        codex.write_text(json.dumps({"plugins": [{"name": "alpha", "source": {"sha": old}}]}) + "\n")
+        MANIFESTS = [(claude, True), (codex, False)]
+        repin("alpha", new, "2.0.0")
+        if not (shas(claude)["alpha"] == new == shas(codex)["alpha"]):
+            sys.exit("selftest FAILED: happy-path sha not written to both manifests")
+        if not (versions(claude)["alpha"] == "2.0.0" == versions(vers)["alpha"]):
+            sys.exit("selftest FAILED: happy-path version not written everywhere")
+        print("selftest ok: repin is all-or-nothing")
+    finally:
+        MANIFESTS, VERSIONS, ROOT = saved
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 if __name__ == "__main__":
     args = sys.argv[1:]
     if args == ["check"]:
         check()
+    elif args == ["selftest"]:
+        selftest()
     elif len(args) in (2, 3):
         repin(args[0], args[1], args[2] if len(args) == 3 else None)
     else:
