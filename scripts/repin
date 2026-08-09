@@ -10,11 +10,14 @@ script makes that impossible.
 
 Usage:
   scripts/repin NAME SHA [VERSION]   update NAME's sha (and version) in all
+  scripts/repin --all                detect each sha-pinned plugin's latest
+                                     remote main sha + version and repin all
   scripts/repin check                verify all three files agree
   scripts/repin selftest             prove a repin is all-or-nothing
 """
 import datetime
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -100,6 +103,50 @@ def repin(name, sha, version):
     check()
 
 
+def _gh(endpoint, *extra):
+    """Raw text from `gh api`. Fails the run on any error — a repin built on a
+    half-fetched catalog is worse than no repin."""
+    result = subprocess.run(
+        ["gh", "api", endpoint, *extra], capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        sys.exit(f"error: gh api {endpoint} failed: {result.stderr.strip()}")
+    return result.stdout.strip()
+
+
+def _repo(url):  # https://github.com/OWNER/REPO.git -> OWNER/REPO
+    return url.rsplit("github.com/", 1)[1].removesuffix(".git")
+
+
+def repin_all():
+    """Quick post-merge repin: for every sha-pinned plugin, read the latest
+    remote main sha and the version its plugin.json declares there, then repin
+    all of them. Floating plugins (no source.sha) have no sha to detect and are
+    left untouched. Every fetch happens BEFORE any write, so a network failure
+    mid-catalog cannot leave a partially-repinned marketplace."""
+    catalog = load(MANIFESTS[0][0])["plugins"]
+    targets, skipped = [], []
+    for plugin in catalog:
+        name, src = plugin["name"], plugin["source"]
+        if "sha" not in src or "url" not in src:
+            skipped.append(name)
+            continue
+        repo = _repo(src["url"])
+        sha = _gh(f"repos/{repo}/commits/main", "--jq", ".sha")
+        prefix = f"{src['path']}/" if src.get("path") else ""
+        manifest = _gh(
+            f"repos/{repo}/contents/{prefix}.claude-plugin/plugin.json?ref={sha}",
+            "-H", "Accept: application/vnd.github.raw",
+        )
+        targets.append((name, sha, json.loads(manifest)["version"]))
+    if not targets:
+        sys.exit("error: no sha-pinned plugins to repin")
+    for name, sha, version in targets:
+        repin(name, sha, version)
+    for name in skipped:
+        print(f"skip {name}: floating ref, no sha to pin")
+
+
 def selftest():
     """Prove repin refuses a partial catalog without leaving a partial write."""
     import shutil
@@ -149,6 +196,8 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     if args == ["check"]:
         check()
+    elif args == ["--all"]:
+        repin_all()
     elif args == ["selftest"]:
         selftest()
     elif len(args) in (2, 3):
