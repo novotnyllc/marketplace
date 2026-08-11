@@ -64,7 +64,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/roundhouse.git",
         "path": "plugins/roundhouse",
-        "sha": "628c83f81ea3d6e44e3e82f112e666d1d3e48250"
+        "sha": "1c9e93c7f5253f687565c1872cf5f715e8d0056e"
       },
       "policy": {
         "installation": "AVAILABLE",
