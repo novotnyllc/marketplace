@@ -3,6 +3,8 @@
 Shared plugin marketplace for Claire Novotny LLC plugins, published for both
 Codex and Claude Code.
 
+**Visit the [public site](https://novotnyllc.github.io/) or [read the user guide](https://novotnyllc.github.io/start/install/).**
+
 ## Install (Codex)
 
 Add the marketplace once:
