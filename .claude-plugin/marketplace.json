@@ -30,10 +30,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/agent-utilities.git",
         "path": "plugins/agent-utilities",
-        "sha": "a434de1c8e29d5ebc67fd3cfd32da8a60ef70a5f"
+        "sha": "2d94e7650d4363caeac2fc9b79064b82c6e1b6b8"
       },
       "description": "The toolbox: self-contained craft skills \u2014 browser automation, CLI design, frontend design, native profiling and performance, 1Password, and skill auditing.",
-      "version": "0.6.5",
+      "version": "0.6.6",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
@@ -83,10 +83,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/roundhouse.git",
         "path": "plugins/roundhouse",
-        "sha": "e6316a29c5425b64514c92540beba35089467987"
+        "sha": "f538288a51f714da7f6044a4868ba75ae40e5236"
       },
       "description": "Machine and infrastructure administration for agent fleets: readiness, inventory, parity, packages, dotfiles, auth, SSH transport, privileged installs, and UniFi.",
-      "version": "0.7.3",
+      "version": "0.7.4",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
