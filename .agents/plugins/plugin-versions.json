@@ -12,7 +12,7 @@
       "name": "agent-utilities",
       "repository": "novotnyllc/agent-utilities",
       "path": "plugins/agent-utilities",
-      "version": "0.6.5"
+      "version": "0.6.6"
     },
     {
       "name": "tart-xcode-runner",
@@ -30,7 +30,7 @@
       "name": "roundhouse",
       "repository": "novotnyllc/roundhouse",
       "path": "plugins/roundhouse",
-      "version": "0.7.3"
+      "version": "0.7.4"
     }
   ]
 }
