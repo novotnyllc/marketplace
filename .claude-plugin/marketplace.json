@@ -46,7 +46,8 @@
       "name": "tart-xcode-runner",
       "source": {
         "source": "github",
-        "repo": "novotnyllc/tart-xcode-runner"
+        "repo": "novotnyllc/tart-xcode-runner",
+        "sha": "c00126795e2c20a520729f0a68d999eaaa76205e"
       },
       "description": "Run isolated Xcode builds and XCUITests in reusable, resettable Tart macOS VMs.",
       "version": "0.4.11",
@@ -82,10 +83,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/roundhouse.git",
         "path": "plugins/roundhouse",
-        "sha": "cb991fab838a37d1ea0acf36ef051ba3d5f2013f"
+        "sha": "e722101c36a079bdd1fa7fbf19dde0503fbedee9"
       },
       "description": "Machine and infrastructure administration for agent fleets: readiness, inventory, parity, packages, dotfiles, auth, SSH transport, privileged installs, and UniFi.",
-      "version": "0.7.1",
+      "version": "0.7.2",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"

@@ -36,7 +36,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/novotnyllc/tart-xcode-runner.git",
-        "ref": "main"
+        "ref": "main",
+        "sha": "c00126795e2c20a520729f0a68d999eaaa76205e"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -64,7 +65,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/roundhouse.git",
         "path": "plugins/roundhouse",
-        "sha": "cb991fab838a37d1ea0acf36ef051ba3d5f2013f"
+        "sha": "e722101c36a079bdd1fa7fbf19dde0503fbedee9"
       },
       "policy": {
         "installation": "AVAILABLE",
