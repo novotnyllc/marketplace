@@ -23,7 +23,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/agent-utilities.git",
         "path": "plugins/agent-utilities",
-        "sha": "45c28c6332134541eb316a6e45b853e1602702aa"
+        "sha": "ae905cdae50710edb586e8a01d7c85e69533ffc2"
       },
       "policy": {
         "installation": "AVAILABLE",
