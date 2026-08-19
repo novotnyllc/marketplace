@@ -30,10 +30,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/agent-utilities.git",
         "path": "plugins/agent-utilities",
-        "sha": "ae905cdae50710edb586e8a01d7c85e69533ffc2"
+        "sha": "5d5edff2dcdbb56bc7fdc0d6459d89a7d3d74d0c"
       },
       "description": "The toolbox: self-contained craft skills \u2014 browser automation, CLI design, frontend design, native profiling and performance, 1Password, and skill auditing.",
-      "version": "0.8.0",
+      "version": "0.9.0",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
