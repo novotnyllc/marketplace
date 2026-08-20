@@ -12,7 +12,7 @@
       "name": "agent-utilities",
       "repository": "novotnyllc/agent-utilities",
       "path": "plugins/agent-utilities",
-      "version": "0.12.0"
+      "version": "0.12.1"
     },
     {
       "name": "tart-xcode-runner",
