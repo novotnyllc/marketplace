@@ -65,10 +65,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/railyard.git",
         "path": "plugins/railyard",
-        "sha": "f2ca315cafd949faf8a8028a5dcce671d7d15fbb"
+        "sha": "67ef59388b47b6e6dc7c66a87a96439b6d2a9b45"
       },
       "description": "The delivery system for agent work: model routing, goal-driven delivery, task orchestration, cross-machine placement, review gates, and Oracle.",
-      "version": "0.8.8",
+      "version": "0.8.12",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
