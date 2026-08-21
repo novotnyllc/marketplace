@@ -23,7 +23,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/agent-utilities.git",
         "path": "plugins/agent-utilities",
-        "sha": "3ddc252facd6cf3b0748229e464579de6c7a9e39"
+        "sha": "fee76b8bae41ce2cc19c09230738906454bbb8f0"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -51,7 +51,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/railyard.git",
         "path": "plugins/railyard",
-        "sha": "6f9c28f40f27da2bdc8c5f2f8a34a8b34290b4fb"
+        "sha": "db6f769cb49af56801d6f918319fa8059e66a56c"
       },
       "policy": {
         "installation": "AVAILABLE",

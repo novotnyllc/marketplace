@@ -12,7 +12,7 @@
       "name": "agent-utilities",
       "repository": "novotnyllc/agent-utilities",
       "path": "plugins/agent-utilities",
-      "version": "0.14.1"
+      "version": "0.14.2"
     },
     {
       "name": "tart-xcode-runner",
@@ -24,7 +24,7 @@
       "name": "railyard",
       "repository": "novotnyllc/railyard",
       "path": "plugins/railyard",
-      "version": "0.8.13"
+      "version": "0.8.14"
     },
     {
       "name": "roundhouse",
