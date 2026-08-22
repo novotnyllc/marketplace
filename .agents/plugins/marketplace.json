@@ -51,7 +51,7 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/railyard.git",
         "path": "plugins/railyard",
-        "sha": "db6f769cb49af56801d6f918319fa8059e66a56c"
+        "sha": "e24a2b1b3fed1fef7207ae726b71808dfd974b72"
       },
       "policy": {
         "installation": "AVAILABLE",
