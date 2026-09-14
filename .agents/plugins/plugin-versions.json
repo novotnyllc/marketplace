@@ -24,7 +24,7 @@
       "name": "railyard",
       "repository": "novotnyllc/railyard",
       "path": "plugins/railyard",
-      "version": "0.8.15"
+      "version": "0.9.0"
     },
     {
       "name": "roundhouse",
