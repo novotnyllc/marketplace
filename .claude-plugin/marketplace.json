@@ -83,10 +83,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/roundhouse.git",
         "path": "plugins/roundhouse",
-        "sha": "6d46f6e6840280e6943acacd61782dcb3dd7fc0c"
+        "sha": "c06098e7713117f57f3730213b3d53e669ab3923"
       },
       "description": "Machine and infrastructure administration for agent fleets: readiness, inventory, parity, packages, dotfiles, auth, SSH transport, privileged installs, and UniFi.",
-      "version": "0.9.20",
+      "version": "0.9.21",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
