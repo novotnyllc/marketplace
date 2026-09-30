@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29",
+  "generatedAt": "2026-09-30",
   "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
   "plugins": [
     {
@@ -12,7 +12,7 @@
       "name": "agent-utilities",
       "repository": "novotnyllc/agent-utilities",
       "path": "plugins/agent-utilities",
-      "version": "0.19.1"
+      "version": "0.19.2"
     },
     {
       "name": "tart-xcode-runner",
@@ -24,13 +24,13 @@
       "name": "railyard",
       "repository": "novotnyllc/railyard",
       "path": "plugins/railyard",
-      "version": "0.12.7"
+      "version": "0.12.8"
     },
     {
       "name": "roundhouse",
       "repository": "novotnyllc/roundhouse",
       "path": "plugins/roundhouse",
-      "version": "0.9.28"
+      "version": "0.9.29"
     }
   ]
 }
