@@ -86,7 +86,7 @@
         "sha": "458c6a4b17d8230720ddbec20657e06182910d19"
       },
       "description": "Machine and infrastructure administration for agent fleets: readiness, inventory, parity, packages, dotfiles, auth, SSH transport, privileged installs, and UniFi.",
-      "version": "0.9.31",
+      "version": "0.9.34",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
