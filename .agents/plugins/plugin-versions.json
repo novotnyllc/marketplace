@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04",
+  "generatedAt": "2026-10-07",
   "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
   "plugins": [
     {
@@ -24,7 +24,7 @@
       "name": "railyard",
       "repository": "novotnyllc/railyard",
       "path": "plugins/railyard",
-      "version": "0.12.13"
+      "version": "0.12.14"
     },
     {
       "name": "roundhouse",
