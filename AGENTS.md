@@ -44,3 +44,7 @@ consistent one writes all three), on a throwaway temp catalog, never the pins.
 
 `scripts/repin` is python3 stdlib only — no dependencies, no install step.
 This repo has no CI; `repin check` and `repin selftest` are the gate.
+
+## Merging
+
+PRs land through the Mergify merge queue (`.mergify.yml`), squashed into one commit on `main` titled and described by the PR; merge commits and rebase merges are turned off. Do not merge by hand. Mergify queues a PR once it is not a draft, its required checks are green, every review thread is resolved, and it is authored by clairernovotny or approved by someone with write access. Add the `do-not-merge` label to hold one back.
