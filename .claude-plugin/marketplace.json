@@ -65,10 +65,10 @@
         "source": "git-subdir",
         "url": "https://github.com/novotnyllc/railyard.git",
         "path": "plugins/railyard",
-        "sha": "e81045f582141610ac2c72cde598dc6f7b995c72"
+        "sha": "fc0ce31d93c672da27e0858cb3999fe723e4b660"
       },
       "description": "Delivery workflows for reviewing changes, following repository merge policy, verifying releases, and coordinating remote work.",
-      "version": "0.15.0",
+      "version": "0.15.2",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
