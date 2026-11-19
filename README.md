@@ -44,9 +44,9 @@ claude plugin install roundhouse@novotnyllc
 ## Included Plugins
 
 - `dotnet-artisan` from `novotnyllc/dotnet-artisan`
-- `agent-utilities` from `novotnyllc/agent-utilities` - the craft-skill toolbox: browser automation, CLI design, frontend design, profiling, 1Password, and skill auditing
+- `agent-utilities` from `novotnyllc/agent-utilities` provides standalone tools and skills for browser automation, CLI and frontend design, native app profiling, 1Password, and skill auditing.
 - `tart-xcode-runner` from `novotnyllc/tart-xcode-runner` - isolated Xcode builds and XCUITests in reusable Tart macOS VMs
-- `railyard` from `novotnyllc/railyard` - the delivery system for agent work: model routing, deliver, task orchestration, cross-machine placement, and review gates
+- `railyard` from `novotnyllc/railyard` provides delivery workflows for reviewing changes, following repository merge policy, verifying releases, and coordinating remote work.
 - `roundhouse` from `novotnyllc/roundhouse` - machine and infrastructure administration: fleet readiness, inventory, parity, packages, dotfiles, auth, SSH transport, privileged installs, and UniFi
 
 ## Marketplace Manifests
