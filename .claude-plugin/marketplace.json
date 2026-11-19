@@ -32,7 +32,7 @@
         "path": "plugins/agent-utilities",
         "sha": "a4c3aaf63e373f5078b2198682eb67a70a36f98d"
       },
-      "description": "The toolbox: self-contained craft skills \u2014 browser automation, CLI design, frontend design, native profiling and performance, 1Password, and skill auditing.",
+      "description": "Standalone tools and skills for browser automation, CLI and frontend design, native app profiling, 1Password, and skill auditing.",
       "version": "0.20.3",
       "author": {
         "name": "Claire Novotny LLC",
@@ -67,7 +67,7 @@
         "path": "plugins/railyard",
         "sha": "7e614cc27d6f26a8cecdfa51d8bfa4a20bcf0ae4"
       },
-      "description": "The delivery system for agent work: model routing, deliver, task orchestration, cross-machine placement, review gates, and Oracle.",
+      "description": "Delivery workflows for reviewing changes, following repository merge policy, verifying releases, and coordinating remote work.",
       "version": "0.14.0",
       "author": {
         "name": "Claire Novotny LLC",
