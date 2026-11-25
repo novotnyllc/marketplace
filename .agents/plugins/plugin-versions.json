@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23",
+  "generatedAt": "2026-11-25",
   "source": "Current plugin manifest versions for entries referenced by .agents/plugins/marketplace.json.",
   "plugins": [
     {
@@ -18,7 +18,7 @@
       "name": "tart-xcode-runner",
       "repository": "novotnyllc/tart-xcode-runner",
       "path": ".",
-      "version": "0.4.11"
+      "version": "0.4.13"
     },
     {
       "name": "railyard",
