@@ -37,7 +37,7 @@
         "source": "url",
         "url": "https://github.com/novotnyllc/tart-xcode-runner.git",
         "ref": "main",
-        "sha": "c00126795e2c20a520729f0a68d999eaaa76205e"
+        "sha": "7175eb88a531aa4a6271e2e82deb74aa79d1f2b6"
       },
       "policy": {
         "installation": "AVAILABLE",
