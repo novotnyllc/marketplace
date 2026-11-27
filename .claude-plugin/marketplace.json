@@ -47,10 +47,10 @@
       "source": {
         "source": "github",
         "repo": "novotnyllc/tart-xcode-runner",
-        "sha": "7175eb88a531aa4a6271e2e82deb74aa79d1f2b6"
+        "sha": "a8e08d91bb1e8fbf39ed4ff731779847e004d02b"
       },
       "description": "Run isolated Xcode builds and XCUITests in reusable, resettable Tart macOS VMs.",
-      "version": "0.4.13",
+      "version": "0.4.14",
       "author": {
         "name": "Claire Novotny LLC",
         "url": "https://github.com/novotnyllc"
